@@ -1,0 +1,40 @@
+# ---- Secrets / credentials (never commit) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+service-account*.json
+.npmrc
+
+# Claude Code: personal settings, local permissions, session data
+.claude/
+CLAUDE.local.md
+
+# ---- Logs (can contain prompts, prices, error details) ----
+*.log
+logs/
+npm-debug.log*
+
+# ---- Generated: rebuild with `node local-server/patch.js` ----
+local-server/public/
+
+# ---- Dependencies / build output ----
+node_modules/
+dist/
+.vercel/
+.cache/
+.parcel-cache/
+
+# ---- Editor / OS noise ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.tmp
